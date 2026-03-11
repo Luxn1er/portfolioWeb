@@ -60,8 +60,8 @@ Web app de portfólio em Flask com design **Space/Glassmorphism** em tons de rox
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/Luxn1er/portfolio-web.git
-cd portfolio-web
+git clone https://github.com/Luxn1er/portfolio.git
+cd portfolio
 ```
 
 ### 2. Crie e ative o ambiente virtual
@@ -128,6 +128,20 @@ const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
   background: url("../img/sua-foto.png") center/cover no-repeat;
 }
 ```
+
+---
+
+## 📤 Publicar no GitHub
+
+1. Crie um repositório **vazio** em [github.com/new](https://github.com/new) (ex: nome `portfolio`)
+2. Na pasta do projeto:
+
+```powershell
+git remote add origin https://github.com/Luxn1er/portfolio.git
+git push -u origin master
+```
+
+(Se o remote já existir, use `git push -u origin master`.)
 
 ---
 
