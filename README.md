@@ -147,7 +147,7 @@ git push -u origin master
 
 ## 👤 Autor
 
-**Pedro Juan Moreira Sena**  
+**Pedro Sena**  
 Estudante de ADS na Anhanguera | Full Stack Developer & Data Analyst
 
 - [GitHub](https://github.com/Luxn1er)

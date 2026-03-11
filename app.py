@@ -9,14 +9,14 @@ I18N: dict[str, dict] = {
     "pt": {
         "meta": {
             "langName": "Português",
-            "title": "Portfólio | LUNILUXX",
+            "title": "Portfólio | Pedro Sena",
             "description": "Portfólio bilingue (PT/EN) com foco em dados e backend em Python.",
         },
         "nav": {"home": "Início", "about": "Sobre", "projects": "Projetos", "skills": "Skills", "contact": "Contato"},
         "hero": {
             "kicker": "Space • Glassmorphism • Alta performance",
             "titleA": "Olá, eu sou",
-            "titleB": "LUNILUXX",
+            "titleB": "Pedro Sena",
             "subtitle": "Estudante de ADS na Anhanguera, com foco em Python, dados e backend.",
             "ctaPrimary": "Ver projetos",
             "ctaSecondary": "Contato",
@@ -62,14 +62,14 @@ I18N: dict[str, dict] = {
     "en": {
         "meta": {
             "langName": "English",
-            "title": "Portfolio | LUNILUXX",
+            "title": "Portfolio | Pedro Sena",
             "description": "Bilingual (PT/EN) portfolio focused on data and Python backend.",
         },
         "nav": {"home": "Home", "about": "About", "projects": "Projects", "skills": "Stack", "contact": "Contact"},
         "hero": {
             "kicker": "Space • Glassmorphism • High performance",
             "titleA": "Hi, I'm",
-            "titleB": "LUNILUXX",
+            "titleB": "Pedro Sena",
             "subtitle": "ADS student at Anhanguera, focused on Python, data, and backend.",
             "ctaPrimary": "View projects",
             "ctaSecondary": "Contact",
