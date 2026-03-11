@@ -60,8 +60,8 @@ Web app de portfólio em Flask com design **Space/Glassmorphism** em tons de rox
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/Luxn1er/portfolio.git
-cd portfolio
+git clone https://github.com/Luxn1er/portfolio-web.git
+cd portfolio-web
 ```
 
 ### 2. Crie e ative o ambiente virtual
