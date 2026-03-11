@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="{{ default_lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0B0B15" />
+    <meta name="description" content="Portfolio" />
+
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+
+  <body>
+    <div class="bg">
+      <div class="stars"></div>
+      <div class="nebula"></div>
+      <div class="grid"></div>
+      <div class="vignette"></div>
+    </div>
+
+    <header class="topbar glass">
+      <a class="brand" href="#home" data-i18n="meta.title">Portfolio</a>
+
+      <nav class="nav">
+        <a href="#home" class="nav__link" data-i18n="nav.home">Início</a>
+        <a href="#about" class="nav__link" data-i18n="nav.about">Sobre</a>
+        <a href="#projects" class="nav__link" data-i18n="nav.projects">Projetos</a>
+        <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
+        <a href="#contact" class="nav__link" data-i18n="nav.contact">Contato</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn btn--ghost" id="langToggle" type="button" aria-label="Toggle language">
+          <span class="btn__icon"><i class="fa-solid fa-language"></i></span>
+          <span class="btn__text" id="langLabel">PT</span>
+        </button>
+
+        <a class="btn btn--primary" href="#projects">
+          <span class="btn__icon"><i class="fa-solid fa-rocket"></i></span>
+          <span class="btn__text" data-i18n="hero.ctaPrimary">Ver projetos</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section hero">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <p class="kicker" data-i18n="hero.kicker">Space • Glassmorphism • Alta performance</p>
+            <h1 class="headline">
+              <span data-i18n="hero.titleA">Olá, eu sou</span>
+              <span class="headline__accent" data-i18n="hero.titleB">LUNILUXX</span>
+            </h1>
+            <p class="subhead" data-i18n="hero.subtitle">
+              Estudante de ADS na Anhanguera, com foco em Python, dados e backend.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">
+                <span class="btn__icon"><i class="fa-solid fa-diagram-project"></i></span>
+                <span class="btn__text" data-i18n="hero.ctaPrimary">Ver projetos</span>
+              </a>
+              <a class="btn btn--ghost" href="#contact">
+                <span class="btn__icon"><i class="fa-solid fa-paper-plane"></i></span>
+                <span class="btn__text" data-i18n="hero.ctaSecondary">Contato</span>
+              </a>
+            </div>
+
+            <div class="hero__chips">
+              <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="chip"><i class="fa-solid fa-chart-line"></i> Pandas</span>
+              <span class="chip"><i class="fa-solid fa-database"></i> SQL</span>
+              <span class="chip"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="chip"><i class="fa-solid fa-flask"></i> Flask</span>
+              <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="solar glass" aria-label="Solar orbit skill system">
+              <div class="solar__core">
+                <div class="avatar" aria-label="Profile photo">
+                  <span class="avatar__ring"></span>
+                  <span class="avatar__ring avatar__ring--2"></span>
+                  <span class="avatar__ring avatar__ring--3"></span>
+                  <span class="avatar__fallback">LL</span>
+                  <!-- Se quiser usar foto: coloque `static/img/profile.jpg` e ative no CSS -->
+                </div>
+              </div>
+
+              <div class="orbit orbit--1">
+                <div class="planet" title="Python"><i class="fa-brands fa-python"></i></div>
+              </div>
+              <div class="orbit orbit--2">
+                <div class="planet" title="Pandas"><i class="fa-solid fa-chart-simple"></i></div>
+              </div>
+              <div class="orbit orbit--3">
+                <div class="planet" title="SQL"><i class="fa-solid fa-database"></i></div>
+              </div>
+              <div class="orbit orbit--4">
+                <div class="planet" title="Docker"><i class="fa-brands fa-docker"></i></div>
+              </div>
+              <div class="orbit orbit--5">
+                <div class="planet" title="Flask"><i class="fa-solid fa-flask"></i></div>
+              </div>
+              <div class="orbit orbit--6">
+                <div class="planet" title="Git"><i class="fa-brands fa-git-alt"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scrollHint" aria-hidden="true">
+          <div class="scrollHint__mouse"></div>
+          <div class="scrollHint__text">Scroll</div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container twoCol">
+          <div class="card glass reveal">
+            <div class="card__head">
+              <h2 data-i18n="about.title">Sobre</h2>
+              <span class="badge">ADS • Anhanguera</span>
+            </div>
+            <p data-i18n="about.p1">
+              Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) na Anhanguera. Gosto de construir soluções
+              limpas, rápidas e bem desenhadas — do dado ao deploy.
+            </p>
+            <p data-i18n="about.p2">Aqui você encontra meus projetos, stack e um jeito fácil de entrar em contato.</p>
+          </div>
+
+          <div class="codeCard glass reveal" aria-label="Animated python snippet">
+            <div class="codeCard__head">
+              <div class="dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="codeCard__title" data-i18n="about.codeTitle">Snippet (Python)</div>
+              <div class="codeCard__right">
+                <span class="pill">typing</span>
+              </div>
+            </div>
+
+            <pre class="code"><code id="typingTarget"></code><span class="caret" aria-hidden="true"></span></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="sectionTitle reveal">
+            <h2 data-i18n="projects.title">Projetos em destaque</h2>
+            <p class="muted">Space UI + Glass cards • SEO friendly • JS leve</p>
+          </div>
+
+          <div class="cardsGrid">
+            <article class="project glass reveal">
+              <div class="project__preview">
+                <img src="{{ url_for('static', filename='img/estoque-dashboard.png') }}" alt="Dashboard do Sistema de Estoque - Entrada/Saída e movimentação" />
+                <img src="{{ url_for('static', filename='img/estoque-movimentacao.png') }}" alt="Controle de Insumos MRX - Identificação e histórico" />
+              </div>
+              <div class="project__top">
+                <div class="project__icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                <div>
+                  <h3 data-i18n="projects.stock.title">Sistema de Estoque</h3>
+                  <p class="muted" data-i18n="projects.stock.desc">
+                    CRUD, controle de itens, movimentações e relatórios. Estrutura preparada para evoluir para API/DB.
+                  </p>
+                </div>
+              </div>
+              <div class="tags">
+                <span class="tag" data-i18n="projects.stock.tag1">Backend</span>
+                <span class="tag" data-i18n="projects.stock.tag2">CRUD</span>
+                <span class="tag">Python</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/Luxn1er/Sistema-de-gestao-de-insumos" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a class="btn btn--primary btn--sm" href="#contact">
+                  <i class="fa-solid fa-sparkles"></i> Demo
+                </a>
+              </div>
+            </article>
+
+            <article class="project glass reveal">
+              <div class="project__preview">
+                <img src="{{ url_for('static', filename='img/dashboard-salarios.png') }}" alt="Dashboard de Análise de Salários na Área de Dados - Métricas e gráficos" />
+              </div>
+              <div class="project__top">
+                <div class="project__icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <div>
+                  <h3 data-i18n="projects.dashboard.title">Dashboard de Dados com Pandas</h3>
+                  <p class="muted" data-i18n="projects.dashboard.desc">
+                    Pipeline de dados, limpeza, métricas e visualizações com foco em performance e reprodutibilidade.
+                  </p>
+                </div>
+              </div>
+              <div class="tags">
+                <span class="tag" data-i18n="projects.dashboard.tag1">Dados</span>
+                <span class="tag" data-i18n="projects.dashboard.tag2">Pandas</span>
+                <span class="tag">Streamlit</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/Luxn1er/dashboard-salarios-dados" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a class="btn btn--primary btn--sm" href="https://dashboard-salarios-dados-65cbnknqdzpktqjh8rc895.streamlit.app" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-sparkles"></i> Demo
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="sectionTitle reveal">
+            <h2 data-i18n="skills.title">Stack</h2>
+            <p class="muted" data-i18n="skills.subtitle">Tecnologias que orbitam o meu dia a dia.</p>
+          </div>
+
+          <div class="stackGrid">
+            <div class="stackItem glass reveal"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="stackItem glass reveal"><i class="fa-solid fa-chart-line"></i><span>Pandas</span></div>
+            <div class="stackItem glass reveal"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+            <div class="stackItem glass reveal"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+            <div class="stackItem glass reveal"><i class="fa-solid fa-flask"></i><span>Flask</span></div>
+            <div class="stackItem glass reveal"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container twoCol">
+          <div class="card glass reveal">
+            <h2 data-i18n="contact.title">Contato</h2>
+            <p class="muted" data-i18n="contact.subtitle">Vamos construir algo juntos.</p>
+
+            <div class="contactMeta">
+              <div class="contactMeta__item">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="muted">EmailJS</span>
+              </div>
+              <a class="contactMeta__item" href="https://www.linkedin.com/in/pedro-juan-moreira-sena-482b78171" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="muted">LinkedIn</span>
+              </a>
+              <a class="contactMeta__item" href="https://github.com/Luxn1er" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span class="muted">GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="form glass reveal" id="contactForm" novalidate>
+            <label class="field">
+              <span data-i18n="contact.name">Nome</span>
+              <input type="text" name="from_name" autocomplete="name" required minlength="2" />
+              <small class="field__error"></small>
+            </label>
+
+            <label class="field">
+              <span data-i18n="contact.email">E-mail</span>
+              <input type="email" name="reply_to" autocomplete="email" required />
+              <small class="field__error"></small>
+            </label>
+
+            <label class="field">
+              <span data-i18n="contact.message">Mensagem</span>
+              <textarea name="message" rows="5" required minlength="10"></textarea>
+              <small class="field__error"></small>
+            </label>
+
+            <button class="btn btn--primary" id="sendBtn" type="submit">
+              <span class="btn__icon"><i class="fa-solid fa-paper-plane"></i></span>
+              <span class="btn__text" data-i18n="contact.send">Enviar</span>
+            </button>
+
+            <div class="toast" id="toast" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="muted" data-i18n="footer.madeWith">Feito com Flask + CSS + JS</span>
+        <a class="toTop" href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      window.__APP__ = {
+        defaultLang: "{{ default_lang }}",
+        availableLangs: {{ available_langs | tojson }},
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
+
