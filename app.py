@@ -130,6 +130,10 @@ def i18n(lang: str):
     return jsonify(payload)
 
 
-if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
+import os
 
+if __name__ == "__main__":
+    # O Render fornece a porta na variável de ambiente PORT
+    port = int(os.environ.get("PORT", 5000))
+    # '0.0.0.0' é essencial para que o servidor seja acessível externamente
+    app.run(host='0.0.0.0', port=port)
